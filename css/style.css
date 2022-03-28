@@ -45,6 +45,9 @@ h6 {
   padding: 0;
   margin: 0;
 }
+:root {
+  --text-size-medium: 16px;
+}
 .container {
   max-width: 130rem;
   margin: 0 auto;
@@ -186,15 +189,21 @@ h6 {
 }
 .progress__title {
   display: flex;
-  align-items: center;
-  padding-bottom: 20px;
+  /* align-items: center; */
+  /* padding-bottom: 20px; */
 }
 .progress__img {
-  max-width: 127px;
-  max-height: 127px;
+  width: 127px;
+  height: 127px;
   margin-right: 20px;
 }
+
+.progress .progress__img {
+  transform: rotate(45deg);
+}
 .progress__header {
+  padding-top: 10px;
+  margin-bottom: 40.9px;
   font-weight: 700;
   font-size: 48px;
   line-height: 140%;
@@ -236,4 +245,101 @@ h6 {
   font-size: 14px;
   line-height: 160%;
   opacity: 0.5;
+}
+.team {
+  padding-bottom: 200px;
+}
+.command__title {
+  margin-bottom: 113px;
+}
+.command__header {
+  margin-bottom: 0;
+}
+.command__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+.command__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.command__img {
+  max-width: 190px;
+  max-height: 190px;
+  border-radius: 50px;
+}
+.command__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  padding-top: 40px;
+}
+.command__prof {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 0.8;
+  padding-top: 15px;
+}
+.command__link {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.order {
+  padding-bottom: 244px;
+}
+.order__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.order__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+.order__subtitle {
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  opacity: 0.5;
+  margin-bottom: 45px;
+}
+.order__button {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  margin-bottom: 41px;
+}
+.order__social {
+  display: flex;
+  align-items: center;
+}
+.order__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.order__item img {
+  width: 50%;
+  height: 50%;
+}
+
+.order__item:last-child {
+  margin-right: 0;
 }
